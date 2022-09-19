@@ -4,8 +4,8 @@ import { RiCloseCircleLine } from "react-icons/ri";
 
 const Todo = ({ todos, removeTodo }) => {
 
-  return todos.map((todo, index) => (
-    <div className={todo.isComplete ? "todo-row complete" : "todo-row"} key={index} >
+  return todos.map((todo) => (
+    <div className="todo-row" >
       <div key={todo.id} >
         {todo.text}
       </div>
