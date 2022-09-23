@@ -1,9 +1,11 @@
-1. The tasks are added when the user press enter on the keyboard or you can have your own button.
+1. Make your to-do list sync with the backend API every time a task is added or deleted.
 
-2. The delete icon shows only when the task is hovered.
+2. Add a clean all tasks button that will delete the entire list from the server and update the empty list on the front-end.
 
-3. The user can add as many tasks as it wants.
+3. There are 3 critical moments in the application timeline (a.k.a. The runtime) to focus on your integration: 
 
-4. When there is no tasks the list should say "No tasks, add a task"
+    a - After the list loads empty for the first time (componentDidMount): you should fetch (GET) the data from the API and update the tasks when the information finally arrives. 
 
-5. There is no way to update a task, the user will have to delete and create again.
+    b - When a new task is added: You should PUT the new list on the server. 
+
+    c - When a task is deleted: You should PUT the new list on the server.
