@@ -36,7 +36,7 @@ export const TodoList = () => {
       }
     };
     updateList();
-  }, []);
+  }, [listArray]);
 
   const addItem = (event) => {
     if (event.keyCode === 13) {
